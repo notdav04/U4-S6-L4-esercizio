@@ -44,7 +44,7 @@ public class AutoreController {
 
     //ok
     @PostMapping
-    public String nuovoAutore(@RequestBody Autore nuovoAutore) {
+    public String nuovoAutore(@RequestBody AutoreDTO nuovoAutore) {
         Long idGenerato = autoreService.addAutore(nuovoAutore);
         return "Autore inserito in DB con id: " + idGenerato;
     }

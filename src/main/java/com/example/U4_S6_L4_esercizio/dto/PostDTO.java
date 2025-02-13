@@ -7,6 +7,6 @@ import lombok.Data;
 public class PostDTO {
     private String titolo;
     private String contenuto;
-    private int tempoDiLettura;
+    private int tempoLettura;
     private Autore autore;
 }

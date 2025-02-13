@@ -33,7 +33,7 @@ public class PostService {
         post.setCategoria(post.getCategoria());
         post.setAutore(postDTO.getAutore());
         post.setContenuto(postDTO.getContenuto());
-        post.setTempoLettura(postDTO.getTempoDiLettura());
+        post.setTempoLettura(postDTO.getTempoLettura());
         return post;
     }
 
@@ -42,7 +42,7 @@ public class PostService {
         postDTO.setTitolo(post.getTitolo());
         postDTO.setAutore(post.getAutore());
         postDTO.setContenuto(post.getContenuto());
-        postDTO.setTempoDiLettura(post.getTempoLettura());
+        postDTO.setTempoLettura(post.getTempoLettura());
         return postDTO;
     }
 

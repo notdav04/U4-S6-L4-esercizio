@@ -36,8 +36,9 @@ public class AutoreService {
     }
 
 
-    public Long addAutore(Autore autore) {
-        Autore autoreInserito = autoreRepo.save(autore);
+    public Long addAutore(AutoreDTO autoreDTO) {
+        Autore autoreInserito = fromAutoreDTOToEntity(autoreDTO);
+        autoreRepo.save(autoreInserito);
         return autoreInserito.getId();
     }
     public Autore addAutore2(Autore autore) {

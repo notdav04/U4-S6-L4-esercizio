@@ -6,7 +6,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
+@Entity(name="posts")
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -17,7 +17,7 @@ public class Post {
     private long id;
     private String categoria;
     private String titolo;
-    private String cover ;
+    private String cover =null ;
     private String contenuto;
     private int tempoLettura;
     @ManyToOne
